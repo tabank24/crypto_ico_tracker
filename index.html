@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crypto ICO Tracker</title>
+</head>
+<body>
+    <h1>Upcoming ICOs</h1>
+    <script>
+        fetch('https://api.coingecko.com/api/v3/ico-calendar')
+            .then(response => response.json())
+            .then(data => console.log(data));
+    </script>
+</body>
+</html>
